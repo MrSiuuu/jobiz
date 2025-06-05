@@ -4,7 +4,15 @@ module.exports = {
     './assets/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'slate-700': '#334155',
+        'teal-600': '#0d9488',
+      },
+      fontFamily: {
+        sans: ['system-ui', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 } 

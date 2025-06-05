@@ -3,6 +3,32 @@
 {% block title %}À propos - Jobiz{% endblock %}
 
 {% block body %}
-    <h1 class="text-2xl font-bold mb-4">À propos de Jobiz</h1>
-    <p>Présentation de la plateforme Jobiz.</p>
-{% endblock %} 
+    <section class="bg-white p-8 rounded shadow-md max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-teal-600">À propos de Jobiz</h1>
+
+        <p class="mb-4 text-gray-700 leading-relaxed">
+            Jobiz est une plateforme dédiée aux chercheurs d'emploi et aux employeurs spécialisés dans le domaine informatique.
+            Elle permet aux administrateurs de gérer les offres d'emploi, les entreprises, les catégories, et aux candidats de
+            consulter les offres et postuler facilement.
+        </p>
+
+        <p class="mb-4 text-gray-700 leading-relaxed">
+            Ce projet a été réalisé intégralement par <strong>Issa Kouyate</strong>, en autonomie totale.  
+            Toutes les missions suivantes ont été accomplies avec succès :
+        </p>
+
+        <ul class="list-disc list-inside mb-4 text-gray-700">
+            <li>Création du Modèle Conceptuel de Données (MCD)</li>
+            <li>Développement complet des entités et relations avec Symfony</li>
+            <li>Implémentation du backend avec EasyAdmin pour gérer les entités</li>
+            <li>Développement du frontend avec Twig et Tailwind CSS</li>
+            <li>Configuration des migrations et de la base de données</li>
+            <li>Mise en place du système d’authentification sécurisé</li>
+        </ul>
+
+        <p class="text-gray-600 italic">
+            Ce projet illustre la maîtrise complète de Symfony, EasyAdmin, Twig et Tailwind,  
+            ainsi que la capacité à mener un projet web de A à Z en autonomie.
+        </p>
+    </section>
+{% endblock %}
