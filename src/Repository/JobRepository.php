@@ -49,7 +49,7 @@ class JobRepository extends ServiceEntityRepository
     {
         $qb = $this->createQueryBuilder('j')
             ->leftJoin('j.company', 'c')
-            ->leftJoin('j.jobCategories', 'jc')
+            ->leftJoin('j.categories', 'jc')
             ->orderBy('j.createdAt', 'DESC');
 
         if ($category) {

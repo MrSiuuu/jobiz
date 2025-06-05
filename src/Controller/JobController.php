@@ -76,7 +76,7 @@ class JobController extends AbstractController
         $application->setJob($job);
         $application->setUser($this->getUser());
         $application->setCoverLetter($coverLetter);
-        $application->setCreatedAt(new \DateTime());
+        $application->setCreateAt(new \DateTimeImmutable());
 
         $entityManager->persist($application);
         $entityManager->flush();
