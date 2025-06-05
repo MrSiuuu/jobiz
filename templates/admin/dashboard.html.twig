@@ -1,0 +1,43 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block page_title %}
+    Tableau de bord Jobiz
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="mb-4">Bienvenue sur le backoffice Jobiz !</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Entreprises</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion des entreprises</h5>
+                        <p class="card-text">Ajoutez, modifiez ou supprimez des entreprises.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Offres</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion des offres</h5>
+                        <p class="card-text">Créez et gérez les offres d'emploi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Utilisateurs</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion des utilisateurs</h5>
+                        <p class="card-text">Administrez les comptes utilisateurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-info mt-4">
+            <strong>Astuce :</strong> Utilisez le menu à gauche pour accéder à la gestion complète des entités.
+        </div>
+    </div>
+{% endblock %} 
