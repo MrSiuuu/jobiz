@@ -30,8 +30,8 @@
                         <select name="country" id="country" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
                             <option value="">Tous les pays</option>
                             {% for country in countries %}
-                                <option value="{{ country }}" {% if current_country == country %}selected{% endif %}>
-                                    {{ country }}
+                                <option value="{{ country.country }}" {% if current_country == country.country %}selected{% endif %}>
+                                    {{ country.country }}
                                 </option>
                             {% endfor %}
                         </select>
@@ -52,7 +52,7 @@
                             <h3 class="text-lg font-medium text-gray-900">{{ job.title }}</h3>
                             <p class="mt-1 text-sm text-gray-500">{{ job.company.name }}</p>
                             <div class="mt-2 flex flex-wrap gap-2">
-                                {% for category in job.jobCategories %}
+                                {% for category in job.categories %}
                                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                                         {{ category.name }}
                                     </span>
